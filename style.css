@@ -197,7 +197,7 @@ figcaption{
 }
 .footer__icon__contacto__i{
     font-size: 2rem;
-    color: black;
+    color: black; 
 
 }
 @media (max-width: 1023px){
