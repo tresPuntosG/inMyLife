@@ -1,0 +1,238 @@
+/* comentado con  /* P 31/5/21 * /
+justifica las fotos dentro del contenedor fotos
+las hace responsive
+
+agrego iconos en footer
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* chequear los max-width y min-width para que al hacer zoom o achicar, no se rompa todo */
+/* Con flex-wrap: wrap, cuando no tiene espacio, va pasando los elementos a la 2da fila */
+.cabecera {
+    padding: 10px 0;
+    max-width: 100%;
+    background-color: #e9a2ad;
+    margin : auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+    }
+
+.logo {
+    margin-left: 45px;
+    height: 150px;
+    width: 150px;
+    
+}
+header img {
+    border-radius: 15px;
+}
+.menu{
+    width: 80%;
+    padding: 10px;
+    padding-left: 45px;
+    display: flex;
+    
+    
+    
+}
+.nav-lista{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    
+    
+}
+.nav-lista_item-link{
+    padding: 10px 10px;
+    margin: 0 20px;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #991265;
+    background-color: #991265;
+    flex-grow: 2;
+    min-width: 50px;
+    text-align: center;
+    border: 1px solid #991265;
+    
+}
+.nav-lista_item-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.contenedor{
+    background-color: white;
+    max-width: 100%;
+    margin-top: 40px;
+   
+}
+h1 {
+    color:rgb(48, 45, 45);
+}
+.fotos {
+    display: flex;                                  /* P 31/5/21 */
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/     /* P 31/5/21 */
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;                                /* P 31/5/21 */
+    justify-content: center;
+    }
+
+.fotos img{
+    width: 300px; height: 375px;
+    margin: 10px;                                   /* P 31/5/21 */
+    
+}
+.fotos figure{
+    margin-bottom: 2rem;
+}
+section{
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+.nosotres{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nosotres p{
+    margin-top: 1rem;
+}
+
+p{
+    color:rgb(48, 45, 45);
+}
+.titulo_productos {
+    color:rgb(48, 45, 45);
+}
+.productos__titulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.productos__img{
+    display: flex;
+    padding: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.productos__img a{
+    text-decoration: none;
+}
+.productos_fotos{
+    margin-top: 40px;
+    color: #D30144;
+}
+.productos__icon__img{
+    width: 5rem;
+    height: 5rem;
+}
+.productos__icon__i{
+    font-size: 4rem;
+    color:#D30144;
+}
+.productos__icon__i p{
+    font-size: 1rem;
+    color:rgb(48, 45, 45);
+}
+figcaption{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    padding: 50px 80px;
+    max-width: 100%;
+    /* background-color:tomato;*/       /* saco color */
+    margin: auto;
+   
+    justify-content: space-between;
+    align-items: center; 
+
+    font-family: Arial, Helvetica, sans-serif;  /* P 31/5/21   misma letra que menu ... */
+    border-top: solid 1px;
+      
+}
+.footer__icon{                          /* P 31/5/21 pongo icono y texto en linea*/
+    display:inline-flex;
+}
+.footer__icon p{                        /* P 31/5/21 separo texto de icono*/
+    margin-left: 1rem;
+}
+.disclaimers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.disclaimers-items{
+    text-decoration: none;
+    list-style: none;
+    flex-grow: 1;
+}
+.disclaimers-items a{
+    text-decoration: none;
+}
+.footer__icon__img{                    /* P 31/5/21  aseguro tamaño iconos igual a fuente*/
+    width: 1rem;
+    height: 1rem;
+}
+.footer__icon__contacto{              /* P 31/5/21  iconos mas grandes*/
+    width: 2rem;
+    height: 2rem;
+
+}
+.footer__icon__contacto__i{
+    font-size: 2rem;
+    color: black;
+
+}
+@media (max-width: 1023px){
+    .nav-lista {
+        /* block hace que el elemento ocupe el 100% del
+        espacio que tiene disponible */
+        display: flex;
+            /* Otra opción:
+             flex-direction: column */
+        }
+        .disclaimers {
+            display: flex;
+        }
+    } 
+    @media (max-width: 800px){
+        .nav-lista {
+            /* block hace que el elemento ocupe el 100% del
+            espacio que tiene disponible */
+            display: block;
+                /* Otra opción:
+                 flex-direction: column */
+            }
+        .disclaimers {
+            display: block;
+        }
+     }
+@media (max-width: 767px){
+    .nav-lista {
+        /* block hace que el elemento ocupe el 100% del
+        espacio que tiene disponible */
+        display: block;
+            /* Otra opción:
+             flex-direction: column */
+        }
+        .disclaimers {
+            display: block;
+        }
+    } 
