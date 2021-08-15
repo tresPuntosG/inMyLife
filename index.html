@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In my life</title>
-    <link rel="shortcut icon" href="imagenes/favicon.png">
+   
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="imagenes/favicon.png">
+
+    <title>In my life</title> 
+    
 </head>
 <body>
+    <a href="#productos" class="cloak">Ir al contenido principal</a>
+
     <header class="cabecera">
         <div class="logo">
             <a href="index.html">
-            <img src="/Imagenes/Logo.png" alt="Ir al inicio">
+            <img src="/Imagenes/Minimalistic Floral Logo.jpg" alt="Ir al inicio">
         </a></div>
         
         <nav class="menu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" id="btn-menu-label">
+                <i class="fas fa-bars"></i>
+            </label>
             <ul class="nav-lista">
                 <li class="nav-lista_item-link">
                   <a href="#nosotres">Nosotres</a>
@@ -43,9 +59,13 @@
             <img src="/Imagenes/Pantalón escocés unisex.jpg" alt="Pantalón escocés unisex">
         </div>
         <section id="nosotres">
+    
             <div class="nosotres">
                 <h1>Nosotres</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt culpa laudantium dolores harum quo ducimus alias est consectetur quis! Dolorem numquam, vel tempora architecto iure voluptatem repellendus expedita facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt culpa laudantium dolores harum quo ducimus alias est consectetur quis! Dolorem numquam, vel tempora architecto iure voluptatem repellendus expedita facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt culpa laudantium dolores harum quo ducimus alias est consectetur quis! Dolorem numquam, vel tempora architecto iure voluptatem repellendus expedita facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt culpa laudantium dolores harum quo ducimus alias est consectetur quis! Dolorem numquam, vel tempora architecto iure voluptatem repellendus expedita facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt culpa laudantium dolores harum quo ducimus alias est consectetur quis! Dolorem numquam, vel tempora architecto iure voluptatem repellendus expedita facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt culpa laudantium dolores harum quo ducimus alias est consectetur quis! Dolorem numquam, vel tempora architecto iure voluptatem repellendus expedita facere?</p>
+                    <p>Somos un equipo, somos una familia.</p><p>Madre e hija, movilizadas por derribar los estereotipos de ropa con etiqueta de “hombre” o “mujer”.</p>
+                    <p>Diseñamos. Creamos. Incluimos.</p>
+                    <p>Nuestra propuesta es que las prendas sean únicas, sin género y que te identifique con lo que vos quieras.</p>
+                    <p><strong>La vida no se trata de ser un ganador o un perdedor, se trata de ser uno mismo y dar lo mejor. Be unique.</strong> </p>
             </div>
             </section>
             <section id="productos">
@@ -55,31 +75,31 @@
                         <a href="#gorritos">
                             <span class=" productos__icon__i">
                                 <i class="fas fa-tshirt"></i>
-                                <p>Gorritos</p>
+                                <p><strong>Gorritos</strong></p>
                             </span>
                         </a>
                        <a href="#remerones">
                             <span class=" productos__icon__i">
                                 <i class="fas fa-tshirt"></i>
-                                <p>Remerones</p>
+                                <p><strong>Remerones</strong></p>
                             </span>
                         </a>
                         <a href="#pantalones">
                             <span class=" productos__icon__i">
                                 <i class="fas fa-tshirt"></i>
-                                <p>Pantalones</p>
+                                <p><strong>Pantalones</strong></p>
                             </span>
                         </a>
                         <a href="#pashminas">
                             <span class=" productos__icon__i">
                                 <i class="fas fa-tshirt"></i>
-                                <p>Pashminas</p>
+                                <p><strong>Pashminas</strong></p>
                             </span>
                         </a>
                         <a href="#panuelos">
                             <span class=" productos__icon__i">
                                 <i class="fas fa-tshirt"></i>
-                                <p>Pañuelos</p>
+                                <p><strong>Pañuelos</strong></p>
                             </span>
                         </a>
                     </div>
@@ -92,16 +112,16 @@
             </div>
             <div class="fotos">
                 <figure>
-                    <img src="/Imagenes/Gorrito fucsia.jpg" alt="">
-                    <figcaption>Gorrito de lana fucsia</figcaption>
+                    <img src="/Imagenes/Gorrito fucsia.jpg" alt="Gorro de lana con trenzas y pompón">
+                    <figcaption class="descripcion_fotos">Lana fucsia</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Gorrito blanco y rosa.jpg" alt="">
-                    <figcaption>Gorrito de lana blanco y rosa</figcaption>
+                    <img src="/Imagenes/Gorrito blanco y rosa.jpg" alt="Gorro de lana con pompón, con un color distinto en la guarda">
+                    <figcaption class="descripcion_fotos">Lana blanco y rosa</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Gorrito blanco.jpg" alt="">
-                    <figcaption>Gorrito de lana fucsia</figcaption>
+                    <img src="/Imagenes/Gorrito blanco.jpg" alt="Gorro de lana liso sin pompón">
+                    <figcaption class="descripcion_fotos">Lana blanco</figcaption>
                 </figure> 
             </div>
         </div>
@@ -111,16 +131,16 @@
             </div>
             <div class="fotos">
                 <figure>
-                    <img src="/Imagenes/Remeron mujer.jpg" alt="">
-                    <figcaption>maskdmaskdsa</figcaption>
+                    <img src="/Imagenes/Remeron mujer.jpg" alt="Remerón unisex con inscripción en el frente.">
+                    <figcaption class="descripcion_fotos">Offline is the New Luxury</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Remerón Listen to your inner voice.jpg" alt="">
-                    <figcaption>asdasd</figcaption>
+                    <img src="/Imagenes/Remerón Listen to your inner voice.jpg" alt="Remerón unisex con inscripción en espejo en el frente.">
+                    <figcaption class="descripcion_fotos">Listen to your inner voice</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Remerón Plain psychotic.jpg" alt="">
-                    <figcaption>asdasdas</figcaption>
+                    <img src="/Imagenes/Remerón Plain psychotic.jpg" alt="Remerón unisex con inscripción en el frente.">
+                    <figcaption class="descripcion_fotos">Mick Jagger</figcaption>
                 </figure> 
             </div>
         </div>
@@ -130,16 +150,16 @@
             </div>
             <div class="fotos">
                 <figure>
-                    <img src="/Imagenes/WhatsApp Image 2021-06-07 at 15.48.14.jpeg" alt="">
-                    <figcaption>asdasd</figcaption>
+                    <img src="/Imagenes/WhatsApp Image 2021-06-07 at 15.48.14.jpeg" alt="Tela micropolar, fondo azul con huellas animales de colores">
+                    <figcaption class="descripcion_fotos">Micropolar huellas</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/WhatsApp Image 2021-06-07 at 15.48.15.jpeg" alt="">
-                    <figcaption>asdasdas</figcaption>
+                    <img src="/Imagenes/WhatsApp Image 2021-06-07 at 15.48.15.jpeg" alt="Tela micropolar, fondo negro y unicornios blancos">
+                    <figcaption class="descripcion_fotos">Micropolar unicornio</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/WhatsApp Image 2021-06-07 at 15.49.43 (1).jpeg" alt="">
-                    <figcaption>adsaas</figcaption>
+                    <img src="/Imagenes/WhatsApp Image 2021-06-07 at 15.49.43 (1).jpeg" alt="Tela micropolar, fondo lila y unicornios blancos">
+                    <figcaption class="descripcion_fotos">Micropolar unicornio lila</figcaption>
                 </figure> 
             </div>
         </div>
@@ -149,16 +169,16 @@
             </div>
             <div class="fotos">
                 <figure>
-                    <img src="/Imagenes/Pashmina3.jpg" alt="">
-                    <figcaption>asdasdas</figcaption>
+                    <img src="/Imagenes/Pashmina3.jpg" alt="Tela lanilla, colores paleta de rosas">
+                    <figcaption class="descripcion_fotos">Rosa y pasteles</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Pashmina1.jpg" alt="">
-                    <figcaption>asdasdsa</figcaption>
+                    <img src="/Imagenes/Pashmina1.jpg" alt="Tela lanilla, colores negro y grises">
+                    <figcaption class="descripcion_fotos">Negro y grises</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Pashmina2.jpg" alt="">
-                    <figcaption>asdasds</figcaption>
+                    <img src="/Imagenes/Pashmina2.jpg" alt="Tela lanilla, colores paleta de beiges y rojo">
+                    <figcaption class="descripcion_fotos">Beige y rojo</figcaption>
                 </figure> 
             </div>
         </div>
@@ -168,21 +188,20 @@
             </div>
             <div class="fotos">
                 <figure>
-                    <img src="/Imagenes/Pañuelo seda 2.jpg" alt="">
-                    <figcaption>asdasd</figcaption>
+                    <img src="/Imagenes/Pañuelo seda 2.jpg" alt="Boca femenina entreabierta estilo abstracto">
+                    <figcaption class="descripcion_fotos">Boca mujer</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Pañuelo seda.jpg" alt="">
-                    <figcaption>asdasd</figcaption>
+                    <img src="/Imagenes/Pañuelo seda.jpg" alt="Tres puños de manos femeninas en alto">
+                    <figcaption class="descripcion_fotos">Poder femenino</figcaption>
                 </figure>
                 <figure>
-                    <img src="/Imagenes/Pañuelo seda 3.jpg" alt="">
-                    <figcaption>asdasd</figcaption>
+                    <img src="/Imagenes/Pañuelo seda 3.jpg" alt="Varios cactus en floridos">
+                    <figcaption class="descripcion_fotos">Cactus</figcaption>
                 </figure> 
             </div>
         </div>
     </main>
-    
     <footer class="footer">
         <div class="footer__icon">
             <i class="fas fa-truck"></i>
@@ -199,7 +218,7 @@
                     <p>Buenos Aires, Argentina</p>
                 </li>
                 <li class="disclaimers-items">
-                    <a href="#" class="disclaimers-items_link">
+                    <a href=/accesibilidad.html class="disclaimers-items_link">
                         <i class="fas fa-universal-access"></i>
                     Accesibilidad</a>
                 </li>
@@ -210,12 +229,9 @@
                     
                 </li>
                 <li id="contacto" class="disclaimers-items">
-                    
-                    <a href="contacto.html" class="disclaimers-items_link">
+                    <a href="mailto:lauguinard@hotmail.com" class="disclaimers-items_link">
                     <i class="fas fa-envelope   footer__icon__contacto__i"></i>
                     </a>
-                    
-
                 </li>
             </ul>
 

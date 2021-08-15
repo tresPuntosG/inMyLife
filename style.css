@@ -1,19 +1,50 @@
-/* comentado con  /* P 31/5/21 * /
-justifica las fotos dentro del contenedor fotos
-las hace responsive
-
-agrego iconos en footer
-*/
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'DM Sans', sans-serif;
+}
 /* chequear los max-width y min-width para que al hacer zoom o achicar, no se rompa todo */
 /* Con flex-wrap: wrap, cuando no tiene espacio, va pasando los elementos a la 2da fila */
+
+a:focus {
+    outline: 3px solid rgb(5, 5, 85);
+    color: white;
+    }
+
+.cloak {
+        background-color: olive;
+        position: absolute!important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap;
+}      
+.cloak:focus {
+    background-color: rgb(94, 8, 94);
+    padding: 10px;
+    width: auto;
+    height: auto;
+    clip: none;
+    
+}
+a  {
+    list-style: none;
+    color: white;
+    
+}
+.mail{
+    color: rgb(48, 45, 45);
+}
+.accesibilidad ul {
+    color: rgb(48, 45, 45);
+    font-family: DM Sans; 
+    margin-top: 1rem;
+}
 .cabecera {
     padding: 10px 0;
     max-width: 100%;
@@ -22,6 +53,7 @@ agrego iconos en footer
     display: flex;
     align-items: center; 
     justify-content: center;
+    font-family: DM Sans;
     
     }
 
@@ -34,13 +66,27 @@ agrego iconos en footer
 header img {
     border-radius: 15px;
 }
+#btn-menu{
+    display: none
+}
+#btn-menu-label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: #991265;
+    color: white;
+
+}
+#btn-menu-label:hover{
+    cursor: pointer;
+    background-color: #991265;
+}
 .menu{
     width: 80%;
     padding: 10px;
     padding-left: 45px;
     display: flex;
-    
-    
     
 }
 .nav-lista{
@@ -67,7 +113,7 @@ header img {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: DM Sans;
     
 }
 .contenedor{
@@ -78,6 +124,22 @@ header img {
 }
 h1 {
     color:rgb(48, 45, 45);
+    font-family: DM Sans;
+}
+.accesibilidad h2 {
+    color:rgb(48, 45, 45);
+    font-family: DM Sans;   
+}
+.accesibilidad {
+    text-align: left;
+    font-family: DM Sans;
+}
+.accesibilidad p {
+    margin-top: 1rem;
+    color:rgb(48, 45, 45); 
+}
+.accesibilidad h2{
+    margin-top: 2rem;
 }
 .fotos {
     display: flex;                                  /* P 31/5/21 */
@@ -105,21 +167,20 @@ section{
 }
 .nosotres{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: DM Sans;
 }
 .nosotres p{
     margin-top: 1rem;
+    color:rgb(48, 45, 45);
 }
 
-p{
-    color:rgb(48, 45, 45);
-}
 .titulo_productos {
     color:rgb(48, 45, 45);
+    
 }
 .productos__titulo{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: DM Sans;
 }
 .productos__img{
     display: flex;
@@ -152,20 +213,24 @@ p{
 }
 figcaption{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: DM Sans;
+}
+
+.descripcion_fotos{
+    color:rgb(94, 8, 94);
+    font-weight: bolder;
 }
 
 .footer {
     padding: 50px 80px;
     max-width: 100%;
-    /* background-color:tomato;*/       /* saco color */
+    background-color: #991265;
     margin: auto;
-   
     justify-content: space-between;
     align-items: center; 
-
-    font-family: Arial, Helvetica, sans-serif;  /* P 31/5/21   misma letra que menu ... */
+    font-family: DM Sans; 
     border-top: solid 1px;
+    color: white;
       
 }
 .footer__icon{                          /* P 31/5/21 pongo icono y texto en linea*/
@@ -177,15 +242,18 @@ figcaption{
 .disclaimers{
     display: flex;
     flex-wrap: wrap;
+    color: white;
 }
 .disclaimers-items{
     text-decoration: none;
     list-style: none;
     flex-grow: 1;
+  
 }
 .disclaimers-items a{
     text-decoration: none;
 }
+
 .footer__icon__img{                    /* P 31/5/21  aseguro tamaño iconos igual a fuente*/
     width: 1rem;
     height: 1rem;
@@ -197,39 +265,8 @@ figcaption{
 }
 .footer__icon__contacto__i{
     font-size: 2rem;
-    color: black;
-
+    color: white;
 }
-
-.formulario-contacto {
-    width: 70%;
-    max-width: 500px;
-    padding: 40px 20px;
-    background-color: #e9a2ad;
-    margin : auto;
-    margin-top: 100px;
-    border-radius: 5px;
-}
-.formulario-contacto label {
-    display: block;
-    margin-bottom: 5px;
-
-}
-.formulario-contacto input,
-.formulario-contacto button {
-    border: 2px solid #c4727e;
-    height: 50px;
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.formulario-contacto button {
-    margin-top: 15px;
-}
-
-
-
 @media (max-width: 1023px){
     .nav-lista {
         /* block hace que el elemento ocupe el 100% del
@@ -242,27 +279,37 @@ figcaption{
             display: flex;
         }
     } 
-    @media (max-width: 800px){
-        .nav-lista {
-            /* block hace que el elemento ocupe el 100% del
-            espacio que tiene disponible */
-            display: block;
-                /* Otra opción:
-                 flex-direction: column */
+
+    @media (max-width: 767px){
+
+        .logo{
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+            margin-top: 10px;
             }
+        .logo img {
+            height: 90%;
+            width: 90%;
+            display: none;
+            }
+        
+        .nav-lista {
+            display: none;
+            } 
+        #btn-menu-label{
+            display: block;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            }
+        
+    
+        #btn-menu:checked ~ .nav-lista{
+            display: block;
+            }
+    
         .disclaimers {
             display: block;
+            }
         }
-     }
-@media (max-width: 767px){
-    .nav-lista {
-        /* block hace que el elemento ocupe el 100% del
-        espacio que tiene disponible */
-        display: block;
-            /* Otra opción:
-             flex-direction: column */
-        }
-        .disclaimers {
-            display: block;
-        }
-    } 
